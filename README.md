@@ -17,9 +17,9 @@ A phone and laptop keep separate copies. The floating public theme switcher prev
 
 ## Replace the placeholders
 
-- **Photos** — put a JPG or WebP beside the SVG in `assets/img/themes/<theme-id>/`, keeping the base name. For example, add `assets/img/themes/classic/hero.webp`, then change the one `images.hero` line for Everyday in `data/defaults.json` from `hero.svg` to `hero.webp`. Each gallery slot has its own path in the same theme. Run `node scripts/make-placeholders.mjs` to regenerate the SVG placeholders.
+- **Photos** — the eight themes use real, openly licensed sample photographs. Author, source, and license for every image appear in [Photo credits](photo-credits.html). To use studio originals, place JPG or WebP files in a local image folder and update the relevant paths in `data/defaults.json`. Update descriptions and package-card assignments in `assets/js/sample-photos.js`. The original SVG stand-ins can still be regenerated with `node scripts/make-placeholders.mjs`.
 - **Studio name and package prices** — change `settings.businessName` and `packages` in `data/defaults.json`. In admin, a price edit applies to this browser. Reset the demo after deploying new defaults to discard old saved overrides.
-- **Copy and branding** — each theme has its own headline, subline, tagline, CTA, and palette. The logo, portrait, bio, social buttons, and testimonial text are placeholders in `index.html`.
+- **Copy and branding** — each theme has its own headline, subline, tagline, CTA, and palette. The logo, bio, social buttons, and testimonial text are placeholders in `index.html`.
 - **Contract** — the merge fields and sample terms are in `data/contract-template.md`. Every rendered agreement is watermarked. Use this template only for the demo.
 
 ## Run locally and deploy

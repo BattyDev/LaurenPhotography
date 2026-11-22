@@ -31,14 +31,14 @@
         "end": ""
       },
       "images": {
-        "hero": "assets/img/themes/classic/hero.svg",
+        "hero": "assets/img/packages/family.webp",
         "gallery": [
-          "assets/img/themes/classic/gallery-1.svg",
-          "assets/img/themes/classic/gallery-2.svg",
-          "assets/img/themes/classic/gallery-3.svg",
-          "assets/img/themes/classic/gallery-4.svg",
-          "assets/img/themes/classic/gallery-5.svg",
-          "assets/img/themes/classic/gallery-6.svg"
+          "assets/img/packages/mini.webp",
+          "assets/img/samples/classic.webp",
+          "assets/img/packages/newborn.webp",
+          "assets/img/packages/extended.webp",
+          "assets/img/samples/milestone.webp",
+          "assets/img/samples/valentines.webp"
         ]
       }
     },
@@ -65,14 +65,14 @@
         "end": "02-14"
       },
       "images": {
-        "hero": "assets/img/themes/valentines/hero.svg",
+        "hero": "assets/img/samples/valentines.webp",
         "gallery": [
-          "assets/img/themes/valentines/gallery-1.svg",
-          "assets/img/themes/valentines/gallery-2.svg",
-          "assets/img/themes/valentines/gallery-3.svg",
-          "assets/img/themes/valentines/gallery-4.svg",
-          "assets/img/themes/valentines/gallery-5.svg",
-          "assets/img/themes/valentines/gallery-6.svg"
+          "assets/img/samples/classic.webp",
+          "assets/img/packages/newborn.webp",
+          "assets/img/packages/family.webp",
+          "assets/img/packages/extended.webp",
+          "assets/img/packages/mini.webp",
+          "assets/img/samples/milestone.webp"
         ]
       }
     },
@@ -99,14 +99,14 @@
         "end": "04-30"
       },
       "images": {
-        "hero": "assets/img/themes/spring/hero.svg",
+        "hero": "assets/img/samples/spring.webp",
         "gallery": [
-          "assets/img/themes/spring/gallery-1.svg",
-          "assets/img/themes/spring/gallery-2.svg",
-          "assets/img/themes/spring/gallery-3.svg",
-          "assets/img/themes/spring/gallery-4.svg",
-          "assets/img/themes/spring/gallery-5.svg",
-          "assets/img/themes/spring/gallery-6.svg"
+          "assets/img/packages/mini.webp",
+          "assets/img/samples/classic.webp",
+          "assets/img/samples/milestone.webp",
+          "assets/img/packages/newborn.webp",
+          "assets/img/packages/extended.webp",
+          "assets/img/packages/family.webp"
         ]
       }
     },
@@ -133,14 +133,14 @@
         "end": "08-15"
       },
       "images": {
-        "hero": "assets/img/themes/summer/hero.svg",
+        "hero": "assets/img/samples/summer.webp",
         "gallery": [
-          "assets/img/themes/summer/gallery-1.svg",
-          "assets/img/themes/summer/gallery-2.svg",
-          "assets/img/themes/summer/gallery-3.svg",
-          "assets/img/themes/summer/gallery-4.svg",
-          "assets/img/themes/summer/gallery-5.svg",
-          "assets/img/themes/summer/gallery-6.svg"
+          "assets/img/packages/family.webp",
+          "assets/img/packages/mini.webp",
+          "assets/img/samples/classic.webp",
+          "assets/img/packages/extended.webp",
+          "assets/img/samples/milestone.webp",
+          "assets/img/packages/newborn.webp"
         ]
       }
     },
@@ -167,14 +167,14 @@
         "end": "10-01"
       },
       "images": {
-        "hero": "assets/img/themes/fall/hero.svg",
+        "hero": "assets/img/samples/fall.webp",
         "gallery": [
-          "assets/img/themes/fall/gallery-1.svg",
-          "assets/img/themes/fall/gallery-2.svg",
-          "assets/img/themes/fall/gallery-3.svg",
-          "assets/img/themes/fall/gallery-4.svg",
-          "assets/img/themes/fall/gallery-5.svg",
-          "assets/img/themes/fall/gallery-6.svg"
+          "assets/img/packages/mini.webp",
+          "assets/img/samples/halloween.webp",
+          "assets/img/samples/classic.webp",
+          "assets/img/packages/extended.webp",
+          "assets/img/packages/newborn.webp",
+          "assets/img/packages/family.webp"
         ]
       }
     },
@@ -201,14 +201,14 @@
         "end": "10-31"
       },
       "images": {
-        "hero": "assets/img/themes/halloween/hero.svg",
+        "hero": "assets/img/samples/halloween.webp",
         "gallery": [
-          "assets/img/themes/halloween/gallery-1.svg",
-          "assets/img/themes/halloween/gallery-2.svg",
-          "assets/img/themes/halloween/gallery-3.svg",
-          "assets/img/themes/halloween/gallery-4.svg",
-          "assets/img/themes/halloween/gallery-5.svg",
-          "assets/img/themes/halloween/gallery-6.svg"
+          "assets/img/samples/fall.webp",
+          "assets/img/packages/mini.webp",
+          "assets/img/samples/milestone.webp",
+          "assets/img/packages/newborn.webp",
+          "assets/img/packages/extended.webp",
+          "assets/img/samples/classic.webp"
         ]
       }
     },
@@ -235,14 +235,14 @@
         "end": "11-27"
       },
       "images": {
-        "hero": "assets/img/themes/thanksgiving/hero.svg",
+        "hero": "assets/img/samples/thanksgiving.webp",
         "gallery": [
-          "assets/img/themes/thanksgiving/gallery-1.svg",
-          "assets/img/themes/thanksgiving/gallery-2.svg",
-          "assets/img/themes/thanksgiving/gallery-3.svg",
-          "assets/img/themes/thanksgiving/gallery-4.svg",
-          "assets/img/themes/thanksgiving/gallery-5.svg",
-          "assets/img/themes/thanksgiving/gallery-6.svg"
+          "assets/img/packages/extended.webp",
+          "assets/img/samples/classic.webp",
+          "assets/img/packages/family.webp",
+          "assets/img/samples/milestone.webp",
+          "assets/img/packages/newborn.webp",
+          "assets/img/samples/fall.webp"
         ]
       }
     },
@@ -269,14 +269,14 @@
         "end": "12-31"
       },
       "images": {
-        "hero": "assets/img/themes/christmas/hero.svg",
+        "hero": "assets/img/samples/christmas.webp",
         "gallery": [
-          "assets/img/themes/christmas/gallery-1.svg",
-          "assets/img/themes/christmas/gallery-2.svg",
-          "assets/img/themes/christmas/gallery-3.svg",
-          "assets/img/themes/christmas/gallery-4.svg",
-          "assets/img/themes/christmas/gallery-5.svg",
-          "assets/img/themes/christmas/gallery-6.svg"
+          "assets/img/packages/mini.webp",
+          "assets/img/packages/newborn.webp",
+          "assets/img/packages/extended.webp",
+          "assets/img/samples/classic.webp",
+          "assets/img/samples/milestone.webp",
+          "assets/img/packages/family.webp"
         ]
       }
     }

@@ -18,6 +18,12 @@ function read() {
     return {
       ...structuredClone(defaults),
       ...saved,
+      // Photo files ship with the site. Keep local theme edits when those files change.
+      themes: defaults.themes.map((theme) => ({
+        ...theme,
+        ...saved?.themes?.find((entry) => entry.id === theme.id),
+        images: theme.images,
+      })),
       settings: { ...defaults.settings, ...saved?.settings },
     };
   } catch {

@@ -1,4 +1,5 @@
 import { get, ready, subscribe } from "./store.js";
+import { descriptions, packagePhotos } from "./sample-photos.js";
 import { applyTheme, activeTheme } from "./themes.js";
 import {
   activeSale,
@@ -21,7 +22,8 @@ function showPhoto(index) {
   photoIndex = (index + 6) % 6;
   $("light-photo").src = current.images.gallery[photoIndex];
   $("light-photo").alt =
-    current.name + " gallery placeholder " + (photoIndex + 1);
+    descriptions[current.images.gallery[photoIndex]] ||
+    current.name + " session photograph";
   $("light-count").textContent = photoIndex + 1 + " / 6";
 }
 function render() {
@@ -46,7 +48,8 @@ function render() {
   document.querySelector(".studio-name").textContent =
     s.settings.businessName.replace(/\s+Photography$/i, "");
   $("hero-img").src = current.images.hero;
-  $("hero-img").alt = current.name + " hero photo placeholder";
+  $("hero-img").alt =
+    descriptions[current.images.hero] || current.name + " session photograph";
   $("collection-name").textContent = "The " + current.name + " Collection";
   $("gallery-theme").textContent = current.name;
   const key = JSON.stringify(current.images.gallery);
@@ -57,12 +60,12 @@ function render() {
         (src, i) =>
           '<button type="button" aria-label="Open gallery photo ' +
           (i + 1) +
+          " · " +
+          esc(descriptions[src] || current.name) +
           '"><img loading="lazy" src="' +
           esc(src) +
           '" alt="' +
-          esc(current.name) +
-          " gallery placeholder " +
-          (i + 1) +
+          esc(descriptions[src] || current.name + " session photograph") +
           '"></button>',
       )
       .join("");
@@ -78,8 +81,16 @@ function render() {
   $("package-list").innerHTML = packages
     .map((p) => {
       const q = quote(p, s);
+      const image = Object.hasOwn(packagePhotos, p.id) && packagePhotos[p.id];
       return (
         '<article class="package-card">' +
+        (image
+          ? '<img class="package-photo" loading="lazy" src="' +
+            esc(image) +
+            '" alt="' +
+            esc(descriptions[image]) +
+            '">'
+          : "") +
         (q.sale ? '<span class="badge">Sale</span> ' : "") +
         (p.featured ? '<span class="badge">Featured</span>' : "") +
         "<h3>" +
