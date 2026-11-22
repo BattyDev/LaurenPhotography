@@ -13,7 +13,12 @@ function fillSampleDetails(client) {
   ]) {
     if (result[field] === placeholder) result[field] = sample[field];
   }
-  if (result.snapshot?.business === "[Lauren's Studio Name] Photography") {
+  if (
+    [
+      "[Lauren's Studio Name] Photography",
+      "Lauren’s Studio Photography",
+    ].includes(result.snapshot?.business)
+  ) {
     result.snapshot = {
       ...result.snapshot,
       business: defaults.settings.businessName,
@@ -46,10 +51,12 @@ function read() {
       settings: {
         ...defaults.settings,
         ...saved?.settings,
-        businessName:
-          saved.settings?.businessName === "[Lauren's Studio Name] Photography"
-            ? defaults.settings.businessName
-            : saved.settings?.businessName || defaults.settings.businessName,
+        businessName: [
+          "[Lauren's Studio Name] Photography",
+          "Lauren’s Studio Photography",
+        ].includes(saved.settings?.businessName)
+          ? defaults.settings.businessName
+          : saved.settings?.businessName || defaults.settings.businessName,
       },
     };
   } catch {

@@ -1,6 +1,6 @@
 {
   "settings": {
-    "businessName": "Lauren’s Studio Photography",
+    "businessName": "Renbird Photography",
     "deliveryDays": 21,
     "showSwitcher": true
   },
@@ -357,7 +357,7 @@
         "includes": "60 minutes, 30 edited photos",
         "price": 325,
         "saleNote": "",
-        "business": "Lauren’s Studio Photography",
+        "business": "Renbird Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -389,7 +389,7 @@
         "includes": "20 minutes, 10 edited photos",
         "price": 175,
         "saleNote": "",
-        "business": "Lauren’s Studio Photography",
+        "business": "Renbird Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -425,7 +425,7 @@
         "includes": "90 minutes, 50 edited photos",
         "price": 450,
         "saleNote": "",
-        "business": "Lauren’s Studio Photography",
+        "business": "Renbird Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -470,7 +470,7 @@
         "includes": "2 hours, 25 edited photos",
         "price": 400,
         "saleNote": "",
-        "business": "Lauren’s Studio Photography",
+        "business": "Renbird Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -498,7 +498,7 @@
         "includes": "60 minutes, 30 edited photos",
         "price": 325,
         "saleNote": "",
-        "business": "Lauren’s Studio Photography",
+        "business": "Renbird Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"

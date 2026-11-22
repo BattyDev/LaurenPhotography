@@ -31,3 +31,7 @@
 ## Sample copy for the pitch
 
 The demo uses “Lauren’s Studio Photography” as a proposed name and includes a sample introduction for Lauren to personalize. Five fictional households have session preferences, locations, and preparation notes. Existing browser records gain this copy only where the original bracketed placeholders remain. The former testimonial slots now explain the session experience so the pitch reads as a complete page without invented customer endorsements.
+
+## Renbird branding
+
+Renbird Photography replaces the proposed studio name throughout the demo, including the sample contracts. The source site at https://renbirdphotography.mypixieset.com/ requires browser verification in this environment. Its About and Contact copy is still pending source text from Cody.
