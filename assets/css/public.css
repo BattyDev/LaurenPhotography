@@ -383,9 +383,8 @@ footer > .wrap {
   gap: 12px;
   flex-wrap: wrap;
 }
-footer button {
-  border: 0;
-  background: none;
+footer .wrap > div a {
+  text-decoration: none;
 }
 .switcher {
   position: fixed;

@@ -1,4 +1,4 @@
-const key = "lp-demo-state-v1";
+const key = "lp-demo-state-v2";
 let defaults,
   state,
   memoryOnly = false;

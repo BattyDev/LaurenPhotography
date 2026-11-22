@@ -20,10 +20,10 @@
         "accentText": "#ffffff"
       },
       "headingFont": "Georgia, serif",
-      "headline": "Little moments, lasting memories.",
-      "subline": "Relaxed portraits for families and the little moments you want to remember.",
-      "cta": "Inquire about a session",
-      "tagline": "Family & portrait photography",
+      "headline": "Capturing authentic moments\nand happy memories.",
+      "subline": "Based in Salt Lake and Provo County, Utah, and open to travel in surrounding states.",
+      "cta": "Get in touch",
+      "tagline": "Family and couples photographer",
       "overlay": "",
       "schedule": {
         "enabled": false,
@@ -283,54 +283,50 @@
   ],
   "packages": [
     {
-      "id": "mini",
-      "name": "Mini Session",
-      "price": 175,
-      "description": "A short and sweet portrait session.",
-      "includes": ["20 minutes", "10 edited photos"],
+      "id": "solo-base",
+      "name": "Solo Portraits — Base",
+      "price": 150,
+      "description": "A short portrait session for one person.",
+      "includes": [
+        "1 person",
+        "Up to 30 minutes",
+        "15 edited images",
+        "1 location"
+      ],
       "visible": true,
       "featured": false,
       "unit": ""
     },
     {
-      "id": "family",
-      "name": "Family Portrait",
-      "price": 325,
-      "description": "Time together with the whole family.",
-      "includes": ["60 minutes", "30 edited photos"],
+      "id": "solo-upgraded",
+      "name": "Solo Portraits — Upgraded",
+      "price": 200,
+      "description": "More time, and a second location nearby.",
+      "includes": [
+        "1 person",
+        "Up to 1 hour",
+        "25 edited images",
+        "2 locations within 20 minutes of each other"
+      ],
+      "visible": true,
+      "featured": false,
+      "unit": ""
+    },
+    {
+      "id": "couples-families",
+      "name": "Couples and Families",
+      "price": 200,
+      "pricePrefix": "Starting at",
+      "description": "Time together for a couple or a family of up to six. Additional people or locations are quoted separately.",
+      "includes": [
+        "Up to 6 people",
+        "Up to 1 hour",
+        "30 edited images",
+        "1 location"
+      ],
       "visible": true,
       "featured": true,
       "unit": ""
-    },
-    {
-      "id": "newborn",
-      "name": "Newborn / Milestone",
-      "price": 400,
-      "description": "A relaxed session for your newest chapter.",
-      "includes": ["2 hours", "25 edited photos"],
-      "visible": true,
-      "featured": false,
-      "unit": ""
-    },
-    {
-      "id": "extended",
-      "name": "Extended Family",
-      "price": 450,
-      "description": "Bring the generations together.",
-      "includes": ["90 minutes", "50 edited photos"],
-      "visible": true,
-      "featured": false,
-      "unit": ""
-    },
-    {
-      "id": "extra",
-      "name": "Add-on: Extra edited photos",
-      "price": 15,
-      "description": "Add individual images to your gallery.",
-      "includes": [],
-      "visible": true,
-      "featured": false,
-      "unit": "photo"
     }
   ],
   "clients": [
@@ -338,12 +334,12 @@
       "id": "sample-rivera",
       "name": "Sample Client — The Rivera Family",
       "email": "rivera.family@example.com",
-      "phone": "(202) 555-0101",
+      "phone": "(801) 555-0101",
       "date": "2026-12-10",
       "time": "15:30",
-      "location": "Willow Creek Park — garden gate (sample location)",
-      "packageId": "family",
-      "deposit": 162.5,
+      "location": "Jordan Pines (sample location)",
+      "packageId": "couples-families",
+      "deposit": 100,
       "notes": "Maya and Daniel with Sofia (7) and Leo (4). Relaxed holiday-card portraits and playful sibling photos. Cream and sage outfits. Plan a snack break for Leo.",
       "status": "Draft",
       "timeline": [
@@ -353,9 +349,9 @@
         }
       ],
       "snapshot": {
-        "packageName": "Family Portrait",
-        "includes": "60 minutes, 30 edited photos",
-        "price": 325,
+        "packageName": "Couples and Families",
+        "includes": "Up to 6 people, up to 1 hour, 30 edited images, 1 location",
+        "price": 200,
         "saleNote": "",
         "business": "Renbird Photography",
         "delivery": 21
@@ -364,15 +360,15 @@
     },
     {
       "id": "sample-chen",
-      "name": "Sample Client — The Chen Family",
-      "email": "chen.family@example.com",
-      "phone": "(202) 555-0102",
+      "name": "Sample Client — Avery Chen",
+      "email": "avery.chen@example.com",
+      "phone": "(801) 555-0102",
       "date": "2026-12-11",
       "time": "10:00",
-      "location": "Evergreen Studio — holiday tree set (sample location)",
-      "packageId": "mini",
-      "deposit": 87.5,
-      "notes": "Avery and Jordan with Emma (5). Holiday mini for gifts to grandparents. Mix seated portraits with candid smiles. Bring Emma’s favorite stuffed rabbit to help her settle in.",
+      "location": "Tunnel Springs Park (sample location)",
+      "packageId": "solo-base",
+      "deposit": 75,
+      "notes": "Avery, solo portrait. A few seated frames and a short walk. Soft layers and comfortable shoes for the trail.",
       "status": "Sent",
       "timeline": [
         {
@@ -385,9 +381,9 @@
         }
       ],
       "snapshot": {
-        "packageName": "Mini Session",
-        "includes": "20 minutes, 10 edited photos",
-        "price": 175,
+        "packageName": "Solo Portraits — Base",
+        "includes": "1 person, up to 30 minutes, 15 edited images, 1 location",
+        "price": 150,
         "saleNote": "",
         "business": "Renbird Photography",
         "delivery": 21
@@ -398,13 +394,13 @@
       "id": "sample-patel",
       "name": "Sample Client — The Patel Family",
       "email": "patel.family@example.com",
-      "phone": "(202) 555-0103",
+      "phone": "(801) 555-0103",
       "date": "2026-12-12",
       "time": "14:00",
-      "location": "Maple Grove Gardens — accessible east lawn (sample location)",
-      "packageId": "extended",
-      "deposit": 225,
-      "notes": "Three generations, eight people total. Whole family first, then grandparents with grandchildren and individual households. One grandparent prefers seated poses and a short walk from the entrance.",
+      "location": "Conservation Gardens, West Jordan (sample location)",
+      "packageId": "couples-families",
+      "deposit": 100,
+      "notes": "Three generations, eight people total. The listed fee is the starting Couples and Families rate; people beyond six are quoted separately. Whole family first, then grandparents with grandchildren and individual households. One grandparent prefers seated poses and a short walk from the entrance.",
       "status": "Viewed",
       "timeline": [
         {
@@ -421,9 +417,9 @@
         }
       ],
       "snapshot": {
-        "packageName": "Extended Family",
-        "includes": "90 minutes, 50 edited photos",
-        "price": 450,
+        "packageName": "Couples and Families",
+        "includes": "Up to 6 people, up to 1 hour, 30 edited images, 1 location",
+        "price": 200,
         "saleNote": "",
         "business": "Renbird Photography",
         "delivery": 21
@@ -434,12 +430,12 @@
       "id": "sample-ellis",
       "name": "Sample Client — The Ellis Family",
       "email": "ellis.family@example.com",
-      "phone": "(202) 555-0104",
+      "phone": "(801) 555-0104",
       "date": "2026-12-13",
       "time": "09:30",
-      "location": "Evergreen Studio — natural-light room (sample location)",
-      "packageId": "newborn",
-      "deposit": 200,
+      "location": "Jordan Pines (sample location)",
+      "packageId": "couples-families",
+      "deposit": 100,
       "notes": "Morgan and Alex with baby Charlie, three weeks old. Neutral wraps and parent-and-baby portraits. Allow feeding and comforting breaks. Parents will bring a keepsake blanket.",
       "status": "Signed",
       "timeline": [
@@ -466,9 +462,9 @@
         "at": "2026-11-19T15:00:00Z"
       },
       "snapshot": {
-        "packageName": "Newborn / Milestone",
-        "includes": "2 hours, 25 edited photos",
-        "price": 400,
+        "packageName": "Couples and Families",
+        "includes": "Up to 6 people, up to 1 hour, 30 edited images, 1 location",
+        "price": 200,
         "saleNote": "",
         "business": "Renbird Photography",
         "delivery": 21
@@ -479,12 +475,12 @@
       "id": "sample-nguyen",
       "name": "Sample Client — The Nguyen Family",
       "email": "nguyen.family@example.com",
-      "phone": "(202) 555-0105",
+      "phone": "(801) 555-0105",
       "date": "2026-12-14",
       "time": "16:00",
-      "location": "Willow Creek Park — meadow entrance (sample location)",
-      "packageId": "family",
-      "deposit": 162.5,
+      "location": "Tunnel Springs Park (sample location)",
+      "packageId": "couples-families",
+      "deposit": 100,
       "notes": "Jamie and Taylor with Oliver (9) and Lucy (6). A new family wall portrait in warm earth-tone outfits. Include individual portraits of each child and one of the parents together.",
       "status": "Draft",
       "timeline": [
@@ -494,9 +490,9 @@
         }
       ],
       "snapshot": {
-        "packageName": "Family Portrait",
-        "includes": "60 minutes, 30 edited photos",
-        "price": 325,
+        "packageName": "Couples and Families",
+        "includes": "Up to 6 people, up to 1 hour, 30 edited images, 1 location",
+        "price": 200,
         "saleNote": "",
         "business": "Renbird Photography",
         "delivery": 21

@@ -30,9 +30,7 @@ export const descriptions = {
 };
 
 export const packagePhotos = {
-  mini: "assets/img/packages/mini.webp",
-  family: "assets/img/packages/family.webp",
-  newborn: "assets/img/packages/newborn.webp",
-  extended: "assets/img/packages/extended.webp",
-  extra: "assets/img/packages/prints.webp",
+  "solo-base": "assets/img/packages/mini.webp",
+  "solo-upgraded": "assets/img/samples/classic.webp",
+  "couples-families": "assets/img/packages/family.webp",
 };

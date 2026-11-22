@@ -9,7 +9,7 @@ import {
   discountLabel,
 } from "./pricing.js";
 import { createLead } from "./contracts.js";
-import { openSheet, esc, closeSheet, toast } from "./ui.js";
+import { openSheet, esc, closeSheet } from "./ui.js";
 const $ = (id) => document.getElementById(id);
 const embedded = window.self !== window.top;
 document.documentElement.classList.toggle("embedded", embedded);
@@ -98,7 +98,8 @@ function render() {
         "</h3><p>" +
         esc(p.description) +
         '</p><div class="price">' +
-        (q.sale ? "<del>" + money(q.original) + "</del>" : "") +
+        (q.sale ? "<del>" + money(q.original) + "</del> " : "") +
+        (p.pricePrefix ? esc(p.pricePrefix) + " " : "") +
         money(q.price) +
         (p.unit ? " <small>/ " + esc(p.unit) + "</small>" : "") +
         "</div><ul>" +
@@ -120,6 +121,7 @@ function render() {
           '">' +
           esc(p.name) +
           " · " +
+          (p.pricePrefix ? esc(p.pricePrefix) + " " : "") +
           money(quote(p, s).price) +
           "</option>",
       )
@@ -214,10 +216,3 @@ $("inquiry-form").onsubmit = (e) => {
   $("thanks").hidden = false;
   $("thanks").focus();
 };
-document
-  .querySelectorAll("[data-social]")
-  .forEach(
-    (b) =>
-      (b.onclick = () =>
-        toast("Placeholder for your " + b.dataset.social + " profile")),
-  );
