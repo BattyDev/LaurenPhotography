@@ -193,7 +193,7 @@ export async function contractHTML(client) {
     client_email: client.email,
     client_phone: client.phone || "To be confirmed",
     today: dateLabel(client.contractDate || client.timeline?.[0]?.at || now()),
-    package_name: snap.packageName || "[Select a package]",
+    package_name: snap.packageName || "Package to be confirmed",
     package_includes: snap.includes || "—",
     session_date: dateLabel(client.date),
     session_time: client.time || "To be confirmed",
@@ -204,10 +204,10 @@ export async function contractHTML(client) {
     balance_due: money(price - deposit),
     delivery_days: snap.delivery || get().settings.deliveryDays,
     marketing_opt_out: client.optOut ? "Yes" : "No",
-    client_signature: client.signedRecord?.name || "[Awaiting signature]",
+    client_signature: client.signedRecord?.name || "Awaiting client signature",
     signed_date: client.signedRecord
       ? dateLabel(client.signedRecord.at)
-      : "[Date of signature]",
+      : "Completed when signed",
   };
   const body = template
     .trim()

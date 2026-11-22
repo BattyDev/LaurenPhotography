@@ -19,7 +19,7 @@ A phone and laptop keep separate copies. The floating public theme switcher prev
 
 - **Photos** — the eight themes use real, openly licensed sample photographs. Author, source, and license for every image appear in [Photo credits](photo-credits.html). To use studio originals, place JPG or WebP files in a local image folder and update the relevant paths in `data/defaults.json`. Update descriptions and package-card assignments in `assets/js/sample-photos.js`. The original SVG stand-ins can still be regenerated with `node scripts/make-placeholders.mjs`.
 - **Studio name and package prices** — change `settings.businessName` and `packages` in `data/defaults.json`. In admin, a price edit applies to this browser. Reset the demo after deploying new defaults to discard old saved overrides.
-- **Copy and branding** — each theme has its own headline, subline, tagline, CTA, and palette. The logo, bio, social buttons, and testimonial text are placeholders in `index.html`.
+- **Copy and branding** — each theme has its own headline, subline, tagline, CTA, and palette. The proposed studio name, sample introduction, and session guide can be personalized. Social buttons demonstrate where profiles will go. Five fictional clients have sample session locations and preparation notes.
 - **Contract** — the merge fields and sample terms are in `data/contract-template.md`. Every rendered agreement is watermarked. Use this template only for the demo.
 
 ## Run locally and deploy

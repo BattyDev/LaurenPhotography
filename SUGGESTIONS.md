@@ -27,3 +27,7 @@
 - The pitch theme switcher affects its own tab so Cody can explore seasonal looks without publishing over Lauren’s selection. **Use live theme** returns to the shared setting.
 - There are no live cross-device updates, real social destinations, delivery tracking, or payments. The public repo and page-level indexing instructions serve the requested low-profile pitch.
 - The typed name and consent checkbox complete signing. Drawing is optional so someone using a keyboard can complete the same flow.
+
+## Sample copy for the pitch
+
+The demo uses “Lauren’s Studio Photography” as a proposed name and includes a sample introduction for Lauren to personalize. Five fictional households have session preferences, locations, and preparation notes. Existing browser records gain this copy only where the original bracketed placeholders remain. The former testimonial slots now explain the session experience so the pitch reads as a complete page without invented customer endorsements.

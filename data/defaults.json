@@ -1,6 +1,6 @@
 {
   "settings": {
-    "businessName": "[Lauren's Studio Name] Photography",
+    "businessName": "Lauren’s Studio Photography",
     "deliveryDays": 21,
     "showSwitcher": true
   },
@@ -287,10 +287,7 @@
       "name": "Mini Session",
       "price": 175,
       "description": "A short and sweet portrait session.",
-      "includes": [
-        "20 minutes",
-        "10 edited photos"
-      ],
+      "includes": ["20 minutes", "10 edited photos"],
       "visible": true,
       "featured": false,
       "unit": ""
@@ -300,10 +297,7 @@
       "name": "Family Portrait",
       "price": 325,
       "description": "Time together with the whole family.",
-      "includes": [
-        "60 minutes",
-        "30 edited photos"
-      ],
+      "includes": ["60 minutes", "30 edited photos"],
       "visible": true,
       "featured": true,
       "unit": ""
@@ -313,10 +307,7 @@
       "name": "Newborn / Milestone",
       "price": 400,
       "description": "A relaxed session for your newest chapter.",
-      "includes": [
-        "2 hours",
-        "25 edited photos"
-      ],
+      "includes": ["2 hours", "25 edited photos"],
       "visible": true,
       "featured": false,
       "unit": ""
@@ -326,10 +317,7 @@
       "name": "Extended Family",
       "price": 450,
       "description": "Bring the generations together.",
-      "includes": [
-        "90 minutes",
-        "50 edited photos"
-      ],
+      "includes": ["90 minutes", "50 edited photos"],
       "visible": true,
       "featured": false,
       "unit": ""
@@ -353,10 +341,10 @@
       "phone": "(202) 555-0101",
       "date": "2026-12-10",
       "time": "15:30",
-      "location": "[Sample garden location]",
+      "location": "Willow Creek Park — garden gate (sample location)",
       "packageId": "family",
       "deposit": 162.5,
-      "notes": "[Sample session notes]",
+      "notes": "Maya and Daniel with Sofia (7) and Leo (4). Relaxed holiday-card portraits and playful sibling photos. Cream and sage outfits. Plan a snack break for Leo.",
       "status": "Draft",
       "timeline": [
         {
@@ -369,7 +357,7 @@
         "includes": "60 minutes, 30 edited photos",
         "price": 325,
         "saleNote": "",
-        "business": "[Lauren's Studio Name] Photography",
+        "business": "Lauren’s Studio Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -380,11 +368,11 @@
       "email": "chen.family@example.com",
       "phone": "(202) 555-0102",
       "date": "2026-12-11",
-      "time": "15:30",
-      "location": "[Sample garden location]",
+      "time": "10:00",
+      "location": "Evergreen Studio — holiday tree set (sample location)",
       "packageId": "mini",
       "deposit": 87.5,
-      "notes": "[Sample session notes]",
+      "notes": "Avery and Jordan with Emma (5). Holiday mini for gifts to grandparents. Mix seated portraits with candid smiles. Bring Emma’s favorite stuffed rabbit to help her settle in.",
       "status": "Sent",
       "timeline": [
         {
@@ -401,7 +389,7 @@
         "includes": "20 minutes, 10 edited photos",
         "price": 175,
         "saleNote": "",
-        "business": "[Lauren's Studio Name] Photography",
+        "business": "Lauren’s Studio Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -412,11 +400,11 @@
       "email": "patel.family@example.com",
       "phone": "(202) 555-0103",
       "date": "2026-12-12",
-      "time": "15:30",
-      "location": "[Sample garden location]",
+      "time": "14:00",
+      "location": "Maple Grove Gardens — accessible east lawn (sample location)",
       "packageId": "extended",
       "deposit": 225,
-      "notes": "[Sample session notes]",
+      "notes": "Three generations, eight people total. Whole family first, then grandparents with grandchildren and individual households. One grandparent prefers seated poses and a short walk from the entrance.",
       "status": "Viewed",
       "timeline": [
         {
@@ -437,7 +425,7 @@
         "includes": "90 minutes, 50 edited photos",
         "price": 450,
         "saleNote": "",
-        "business": "[Lauren's Studio Name] Photography",
+        "business": "Lauren’s Studio Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -448,11 +436,11 @@
       "email": "ellis.family@example.com",
       "phone": "(202) 555-0104",
       "date": "2026-12-13",
-      "time": "15:30",
-      "location": "[Sample garden location]",
+      "time": "09:30",
+      "location": "Evergreen Studio — natural-light room (sample location)",
       "packageId": "newborn",
       "deposit": 200,
-      "notes": "[Sample session notes]",
+      "notes": "Morgan and Alex with baby Charlie, three weeks old. Neutral wraps and parent-and-baby portraits. Allow feeding and comforting breaks. Parents will bring a keepsake blanket.",
       "status": "Signed",
       "timeline": [
         {
@@ -482,7 +470,7 @@
         "includes": "2 hours, 25 edited photos",
         "price": 400,
         "saleNote": "",
-        "business": "[Lauren's Studio Name] Photography",
+        "business": "Lauren’s Studio Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"
@@ -493,11 +481,11 @@
       "email": "nguyen.family@example.com",
       "phone": "(202) 555-0105",
       "date": "2026-12-14",
-      "time": "15:30",
-      "location": "[Sample garden location]",
+      "time": "16:00",
+      "location": "Willow Creek Park — meadow entrance (sample location)",
       "packageId": "family",
       "deposit": 162.5,
-      "notes": "[Sample session notes]",
+      "notes": "Jamie and Taylor with Oliver (9) and Lucy (6). A new family wall portrait in warm earth-tone outfits. Include individual portraits of each child and one of the parents together.",
       "status": "Draft",
       "timeline": [
         {
@@ -510,7 +498,7 @@
         "includes": "60 minutes, 30 edited photos",
         "price": 325,
         "saleNote": "",
-        "business": "[Lauren's Studio Name] Photography",
+        "business": "Lauren’s Studio Photography",
         "delivery": 21
       },
       "contractDate": "2026-11-19T12:00:00Z"

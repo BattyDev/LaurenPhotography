@@ -3,6 +3,24 @@ let defaults,
   state,
   memoryOnly = false;
 const listeners = new Set();
+function fillSampleDetails(client) {
+  const sample = defaults.clients.find((entry) => entry.id === client.id);
+  if (!sample) return client;
+  const result = { ...client };
+  for (const [field, placeholder] of [
+    ["location", "[Sample garden location]"],
+    ["notes", "[Sample session notes]"],
+  ]) {
+    if (result[field] === placeholder) result[field] = sample[field];
+  }
+  if (result.snapshot?.business === "[Lauren's Studio Name] Photography") {
+    result.snapshot = {
+      ...result.snapshot,
+      business: defaults.settings.businessName,
+    };
+  }
+  return result;
+}
 function storageNotice() {
   memoryOnly = true;
   if (document.querySelector(".storage-notice")) return;
@@ -18,13 +36,21 @@ function read() {
     return {
       ...structuredClone(defaults),
       ...saved,
+      clients: (saved.clients || defaults.clients).map(fillSampleDetails),
       // Photo files ship with the site. Keep local theme edits when those files change.
       themes: defaults.themes.map((theme) => ({
         ...theme,
         ...saved?.themes?.find((entry) => entry.id === theme.id),
         images: theme.images,
       })),
-      settings: { ...defaults.settings, ...saved?.settings },
+      settings: {
+        ...defaults.settings,
+        ...saved?.settings,
+        businessName:
+          saved.settings?.businessName === "[Lauren's Studio Name] Photography"
+            ? defaults.settings.businessName
+            : saved.settings?.businessName || defaults.settings.businessName,
+      },
     };
   } catch {
     storageNotice();
