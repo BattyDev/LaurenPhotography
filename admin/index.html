@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="form-action 'none'" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Studio Admin · Lauren’s Photography</title>
+    <link rel="icon" href="../assets/img/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+    <link rel="stylesheet" href="../assets/css/themes.css" />
+    <link rel="stylesheet" href="../assets/css/pricing.css" />
+    <link rel="stylesheet" href="../assets/css/contracts.css" />
+    <script type="module" src="../assets/js/admin.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#workspace">Skip to workspace</a>
+    <header class="admin-bar">
+      <div class="admin-brand">
+        <svg class="icon" aria-hidden="true">
+          <use href="../assets/img/icons.svg#camera"></use></svg
+        ><span id="business">[Lauren's Studio Name] Photography</span>
+      </div>
+      <span class="demo-pill">DEMO MODE — nothing is actually sent</span
+      ><a href="../" class="btn" target="_blank" rel="noopener"
+        >View site
+        <svg class="icon" aria-hidden="true">
+          <use href="../assets/img/icons.svg#external"></use></svg
+      ></a>
+      <div class="user-tools" hidden>
+        <button id="feed" aria-label="Activity feed">
+          <svg class="icon" aria-hidden="true">
+            <use href="../assets/img/icons.svg#bell"></use>
+          </svg></button
+        ><button id="more" aria-label="More options">
+          <svg class="icon" aria-hidden="true">
+            <use href="../assets/img/icons.svg#more"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="workspace">
+      <section id="welcome">
+        <figure>
+          <img
+            src="../assets/img/themes/classic/hero.svg"
+            alt="Everyday studio photo placeholder"
+          />
+        </figure>
+        <div>
+          <p class="admin-kicker">Studio admin</p>
+          <h1>Welcome back,<br /><em>Lauren.</em></h1>
+          <form id="login">
+            <label
+              >Studio PIN<input
+                id="pin"
+                type="password"
+                name="pin"
+                inputmode="numeric"
+                pattern="[0-9]{4}"
+                minlength="4"
+                maxlength="4"
+                autocomplete="off"
+                required
+                title="Enter any four digits"
+            /></label>
+            <p>Demo — any PIN works.</p>
+            <button class="primary">
+              Open studio
+              <svg class="icon" aria-hidden="true">
+                <use href="../assets/img/icons.svg#arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+      <div class="dashboard" hidden>
+        <nav class="tabs" aria-label="Studio sections">
+          <span class="admin-kicker">Studio workspace</span
+          ><button data-tab="theme">
+            <svg class="icon" aria-hidden="true">
+              <use href="../assets/img/icons.svg#grid"></use>
+            </svg>
+            Theme</button
+          ><button data-tab="pricing">
+            <svg class="icon" aria-hidden="true">
+              <use href="../assets/img/icons.svg#tag"></use>
+            </svg>
+            Pricing</button
+          ><button data-tab="clients">
+            <svg class="icon" aria-hidden="true">
+              <use href="../assets/img/icons.svg#users"></use>
+            </svg>
+            Clients
+          </button>
+        </nav>
+        <div class="editor">
+          <h1 class="sr-only">Studio workspace</h1>
+          <div id="theme-title">
+            <p class="admin-kicker">Studio appearance</p>
+            <h2>Theme</h2>
+          </div>
+          <div id="panel"></div>
+        </div>
+        <aside class="preview">
+          <div class="preview-label">
+            <svg class="icon" aria-hidden="true">
+              <use href="../assets/img/icons.svg#grid"></use>
+            </svg>
+            Live site preview
+          </div>
+          <iframe id="live-preview" title="Public studio site preview"></iframe>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

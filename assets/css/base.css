@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --bg: #faf8f2;
+  --surface: #fffdf7;
+  --text: #29382e;
+  --accent: #3d503e;
+  --accentText: #fff;
+  --line: color-mix(in srgb, var(--text) 22%, transparent);
+  --heading-font: Georgia, serif;
+  color: var(--text);
+  background: var(--bg);
+  font:
+    16px/1.55 "Segoe UI",
+    Arial,
+    sans-serif;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.12;
+  text-wrap: balance;
+}
+h1,
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.15rem;
+}
+a {
+  color: inherit;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button,
+summary,
+select {
+  cursor: pointer;
+}
+button,
+.btn {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.58rem 1rem;
+  min-height: 44px;
+}
+a.btn,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.primary,
+button.primary {
+  background: var(--accent);
+  color: var(--accentText);
+  border-color: transparent;
+}
+button:hover,
+.btn:hover {
+  filter: brightness(0.96);
+}
+:focus-visible {
+  outline: 3px solid #a65b32;
+  outline-offset: 3px;
+}
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  width: 100%;
+  padding: 0.67rem 0.85rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 6px;
+  min-height: 44px;
+}
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+label input,
+label select,
+label textarea {
+  margin-top: 0.25rem;
+}
+label:has(input[type="checkbox"]),
+label:has(input[type="radio"]) {
+  min-height: 44px;
+  align-content: center;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--accent);
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+}
+[hidden] {
+  display: none !important;
+}
+.skip {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  z-index: 20;
+  background: white;
+  padding: 12px;
+}
+.skip:focus {
+  top: 10px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+.toasts,
+.storage-notice {
+  position: fixed;
+  z-index: 50;
+  bottom: 5.2rem;
+  right: 1rem;
+  max-width: 90vw;
+}
+.toasts > div,
+.storage-notice {
+  background: #283a30;
+  color: white;
+  padding: 0.8rem 1.1rem;
+  border-radius: 8px;
+  margin-top: 0.4rem;
+  box-shadow: 0 4px 20px #0002;
+}
+.toasts button {
+  margin-left: 12px;
+  color: #283a30;
+}
+.storage-notice {
+  top: 4px;
+  bottom: auto;
+  font-size: 0.85rem;
+}
+.sheet {
+  color: var(--text);
+  background: var(--bg);
+  padding: 0;
+  border: 0;
+  width: min(510px, 100%);
+  max-width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0 0 0 auto;
+  box-shadow: 0 12px 64px #0003;
+}
+.sheet::backdrop,
+dialog::backdrop {
+  background: #16241bd1;
+}
+.sheet-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 2;
+}
+.sheet-heading h2 {
+  font-size: 1.7rem;
+}
+.sheet-heading button {
+  width: 44px;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.sheet-body {
+  padding: 1.5rem;
+}
+.sheet form {
+  display: grid;
+  gap: 1rem;
+}
+.sheet p + p {
+  margin-top: 0.65rem;
+}
+.sheet h3 {
+  margin: 1rem 0 0.5rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (max-width: 899px) {
+  .sheet {
+    margin: auto 0 0;
+    width: 100%;
+    height: auto;
+    max-height: 90dvh;
+    border-radius: 18px 18px 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

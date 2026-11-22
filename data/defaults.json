@@ -1,0 +1,535 @@
+{
+  "settings": {
+    "businessName": "[Lauren's Studio Name] Photography",
+    "deliveryDays": 21,
+    "showSwitcher": true
+  },
+  "mode": "manual",
+  "themeId": "classic",
+  "previewDate": "",
+  "themes": [
+    {
+      "id": "classic",
+      "name": "Everyday",
+      "emoji": "🌿",
+      "palette": {
+        "bg": "#f8f6ee",
+        "surface": "#fffdf8",
+        "text": "#253b31",
+        "accent": "#304c3c",
+        "accentText": "#ffffff"
+      },
+      "headingFont": "Georgia, serif",
+      "headline": "Little moments, lasting memories.",
+      "subline": "Relaxed portraits for families and the little moments you want to remember.",
+      "cta": "Inquire about a session",
+      "tagline": "Family & portrait photography",
+      "overlay": "",
+      "schedule": {
+        "enabled": false,
+        "start": "",
+        "end": ""
+      },
+      "images": {
+        "hero": "assets/img/themes/classic/hero.svg",
+        "gallery": [
+          "assets/img/themes/classic/gallery-1.svg",
+          "assets/img/themes/classic/gallery-2.svg",
+          "assets/img/themes/classic/gallery-3.svg",
+          "assets/img/themes/classic/gallery-4.svg",
+          "assets/img/themes/classic/gallery-5.svg",
+          "assets/img/themes/classic/gallery-6.svg"
+        ]
+      }
+    },
+    {
+      "id": "valentines",
+      "name": "Valentine's",
+      "emoji": "♡",
+      "palette": {
+        "bg": "#fff4f3",
+        "surface": "#fffafa",
+        "text": "#452632",
+        "accent": "#88364e",
+        "accentText": "#ffffff"
+      },
+      "headingFont": "'Baskerville', Georgia, serif",
+      "headline": "For the ones\nyou love.",
+      "subline": "Soft blush tones and a little time together for the people closest to you.",
+      "cta": "Book a Valentine’s session",
+      "tagline": "Valentine’s portraits",
+      "overlay": "hearts",
+      "schedule": {
+        "enabled": true,
+        "start": "02-01",
+        "end": "02-14"
+      },
+      "images": {
+        "hero": "assets/img/themes/valentines/hero.svg",
+        "gallery": [
+          "assets/img/themes/valentines/gallery-1.svg",
+          "assets/img/themes/valentines/gallery-2.svg",
+          "assets/img/themes/valentines/gallery-3.svg",
+          "assets/img/themes/valentines/gallery-4.svg",
+          "assets/img/themes/valentines/gallery-5.svg",
+          "assets/img/themes/valentines/gallery-6.svg"
+        ]
+      }
+    },
+    {
+      "id": "spring",
+      "name": "Spring / Easter",
+      "emoji": "🌷",
+      "palette": {
+        "bg": "#f3f5ec",
+        "surface": "#fafbf6",
+        "text": "#2e3c30",
+        "accent": "#456048",
+        "accentText": "#ffffff"
+      },
+      "headingFont": "Georgia, serif",
+      "headline": "A season of\nnew beginnings.",
+      "subline": "Fresh greens, gentle light, and room for your family to grow.",
+      "cta": "Book a spring session",
+      "tagline": "Spring portraits",
+      "overlay": "",
+      "schedule": {
+        "enabled": true,
+        "start": "03-15",
+        "end": "04-30"
+      },
+      "images": {
+        "hero": "assets/img/themes/spring/hero.svg",
+        "gallery": [
+          "assets/img/themes/spring/gallery-1.svg",
+          "assets/img/themes/spring/gallery-2.svg",
+          "assets/img/themes/spring/gallery-3.svg",
+          "assets/img/themes/spring/gallery-4.svg",
+          "assets/img/themes/spring/gallery-5.svg",
+          "assets/img/themes/spring/gallery-6.svg"
+        ]
+      }
+    },
+    {
+      "id": "summer",
+      "name": "Summer",
+      "emoji": "☀️",
+      "palette": {
+        "bg": "#fff8e8",
+        "surface": "#fffdf6",
+        "text": "#273a3f",
+        "accent": "#255a64",
+        "accentText": "#ffffff"
+      },
+      "headingFont": "'Palatino Linotype', Georgia, serif",
+      "headline": "Where the\nsun lingers.",
+      "subline": "Easy summer evenings, sandy feet, and portraits made in golden light.",
+      "cta": "Book a summer session",
+      "tagline": "Summer portraits",
+      "overlay": "",
+      "schedule": {
+        "enabled": true,
+        "start": "06-01",
+        "end": "08-15"
+      },
+      "images": {
+        "hero": "assets/img/themes/summer/hero.svg",
+        "gallery": [
+          "assets/img/themes/summer/gallery-1.svg",
+          "assets/img/themes/summer/gallery-2.svg",
+          "assets/img/themes/summer/gallery-3.svg",
+          "assets/img/themes/summer/gallery-4.svg",
+          "assets/img/themes/summer/gallery-5.svg",
+          "assets/img/themes/summer/gallery-6.svg"
+        ]
+      }
+    },
+    {
+      "id": "fall",
+      "name": "Fall / Back to School",
+      "emoji": "🍂",
+      "palette": {
+        "bg": "#faf4e7",
+        "surface": "#fffaf1",
+        "text": "#423629",
+        "accent": "#744329",
+        "accentText": "#ffffff"
+      },
+      "headingFont": "Georgia, serif",
+      "headline": "A little autumn\nto keep.",
+      "subline": "Warm rust, golden leaves, and a fresh chapter for your family album.",
+      "cta": "Book a fall session",
+      "tagline": "Autumn portraits",
+      "overlay": "leaves",
+      "schedule": {
+        "enabled": true,
+        "start": "08-16",
+        "end": "10-01"
+      },
+      "images": {
+        "hero": "assets/img/themes/fall/hero.svg",
+        "gallery": [
+          "assets/img/themes/fall/gallery-1.svg",
+          "assets/img/themes/fall/gallery-2.svg",
+          "assets/img/themes/fall/gallery-3.svg",
+          "assets/img/themes/fall/gallery-4.svg",
+          "assets/img/themes/fall/gallery-5.svg",
+          "assets/img/themes/fall/gallery-6.svg"
+        ]
+      }
+    },
+    {
+      "id": "halloween",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "palette": {
+        "bg": "#25232d",
+        "surface": "#302d38",
+        "text": "#fbf5ee",
+        "accent": "#f6aa70",
+        "accentText": "#302431"
+      },
+      "headingFont": "'Palatino Linotype', Georgia, serif",
+      "headline": "A touch of\nOctober magic.",
+      "subline": "Pumpkin season portraits for little characters and their favorite grown-ups.",
+      "cta": "Book an October session",
+      "tagline": "Halloween portraits",
+      "overlay": "",
+      "schedule": {
+        "enabled": true,
+        "start": "10-02",
+        "end": "10-31"
+      },
+      "images": {
+        "hero": "assets/img/themes/halloween/hero.svg",
+        "gallery": [
+          "assets/img/themes/halloween/gallery-1.svg",
+          "assets/img/themes/halloween/gallery-2.svg",
+          "assets/img/themes/halloween/gallery-3.svg",
+          "assets/img/themes/halloween/gallery-4.svg",
+          "assets/img/themes/halloween/gallery-5.svg",
+          "assets/img/themes/halloween/gallery-6.svg"
+        ]
+      }
+    },
+    {
+      "id": "thanksgiving",
+      "name": "Thanksgiving",
+      "emoji": "🍁",
+      "palette": {
+        "bg": "#f9f2e8",
+        "surface": "#fffaf2",
+        "text": "#422e2d",
+        "accent": "#763a41",
+        "accentText": "#ffffff"
+      },
+      "headingFont": "'Baskerville', Georgia, serif",
+      "headline": "Together at\nthe table.",
+      "subline": "Bring everyone together for portraits in the warm colors of harvest season.",
+      "cta": "Book a harvest session",
+      "tagline": "Harvest portraits",
+      "overlay": "",
+      "schedule": {
+        "enabled": true,
+        "start": "11-01",
+        "end": "11-27"
+      },
+      "images": {
+        "hero": "assets/img/themes/thanksgiving/hero.svg",
+        "gallery": [
+          "assets/img/themes/thanksgiving/gallery-1.svg",
+          "assets/img/themes/thanksgiving/gallery-2.svg",
+          "assets/img/themes/thanksgiving/gallery-3.svg",
+          "assets/img/themes/thanksgiving/gallery-4.svg",
+          "assets/img/themes/thanksgiving/gallery-5.svg",
+          "assets/img/themes/thanksgiving/gallery-6.svg"
+        ]
+      }
+    },
+    {
+      "id": "christmas",
+      "name": "Christmas / Holiday Minis",
+      "emoji": "❄️",
+      "palette": {
+        "bg": "#edf3ed",
+        "surface": "#fafbf6",
+        "text": "#21372e",
+        "accent": "#315640",
+        "accentText": "#ffffff"
+      },
+      "headingFont": "Georgia, serif",
+      "headline": "Home for\nthe holidays.",
+      "subline": "Evergreen branches, festive details, and a little holiday time together.",
+      "cta": "Book your Holiday Mini Session →",
+      "tagline": "Holiday mini sessions",
+      "overlay": "snow",
+      "schedule": {
+        "enabled": true,
+        "start": "11-28",
+        "end": "12-31"
+      },
+      "images": {
+        "hero": "assets/img/themes/christmas/hero.svg",
+        "gallery": [
+          "assets/img/themes/christmas/gallery-1.svg",
+          "assets/img/themes/christmas/gallery-2.svg",
+          "assets/img/themes/christmas/gallery-3.svg",
+          "assets/img/themes/christmas/gallery-4.svg",
+          "assets/img/themes/christmas/gallery-5.svg",
+          "assets/img/themes/christmas/gallery-6.svg"
+        ]
+      }
+    }
+  ],
+  "packages": [
+    {
+      "id": "mini",
+      "name": "Mini Session",
+      "price": 175,
+      "description": "A short and sweet portrait session.",
+      "includes": [
+        "20 minutes",
+        "10 edited photos"
+      ],
+      "visible": true,
+      "featured": false,
+      "unit": ""
+    },
+    {
+      "id": "family",
+      "name": "Family Portrait",
+      "price": 325,
+      "description": "Time together with the whole family.",
+      "includes": [
+        "60 minutes",
+        "30 edited photos"
+      ],
+      "visible": true,
+      "featured": true,
+      "unit": ""
+    },
+    {
+      "id": "newborn",
+      "name": "Newborn / Milestone",
+      "price": 400,
+      "description": "A relaxed session for your newest chapter.",
+      "includes": [
+        "2 hours",
+        "25 edited photos"
+      ],
+      "visible": true,
+      "featured": false,
+      "unit": ""
+    },
+    {
+      "id": "extended",
+      "name": "Extended Family",
+      "price": 450,
+      "description": "Bring the generations together.",
+      "includes": [
+        "90 minutes",
+        "50 edited photos"
+      ],
+      "visible": true,
+      "featured": false,
+      "unit": ""
+    },
+    {
+      "id": "extra",
+      "name": "Add-on: Extra edited photos",
+      "price": 15,
+      "description": "Add individual images to your gallery.",
+      "includes": [],
+      "visible": true,
+      "featured": false,
+      "unit": "photo"
+    }
+  ],
+  "clients": [
+    {
+      "id": "sample-rivera",
+      "name": "Sample Client — The Rivera Family",
+      "email": "rivera.family@example.com",
+      "phone": "(202) 555-0101",
+      "date": "2026-12-10",
+      "time": "15:30",
+      "location": "[Sample garden location]",
+      "packageId": "family",
+      "deposit": 162.5,
+      "notes": "[Sample session notes]",
+      "status": "Draft",
+      "timeline": [
+        {
+          "label": "Created",
+          "at": "2026-11-19T12:00:00Z"
+        }
+      ],
+      "snapshot": {
+        "packageName": "Family Portrait",
+        "includes": "60 minutes, 30 edited photos",
+        "price": 325,
+        "saleNote": "",
+        "business": "[Lauren's Studio Name] Photography",
+        "delivery": 21
+      },
+      "contractDate": "2026-11-19T12:00:00Z"
+    },
+    {
+      "id": "sample-chen",
+      "name": "Sample Client — The Chen Family",
+      "email": "chen.family@example.com",
+      "phone": "(202) 555-0102",
+      "date": "2026-12-11",
+      "time": "15:30",
+      "location": "[Sample garden location]",
+      "packageId": "mini",
+      "deposit": 87.5,
+      "notes": "[Sample session notes]",
+      "status": "Sent",
+      "timeline": [
+        {
+          "label": "Created",
+          "at": "2026-11-19T12:00:00Z"
+        },
+        {
+          "label": "Sent",
+          "at": "2026-11-19T13:00:00Z"
+        }
+      ],
+      "snapshot": {
+        "packageName": "Mini Session",
+        "includes": "20 minutes, 10 edited photos",
+        "price": 175,
+        "saleNote": "",
+        "business": "[Lauren's Studio Name] Photography",
+        "delivery": 21
+      },
+      "contractDate": "2026-11-19T12:00:00Z"
+    },
+    {
+      "id": "sample-patel",
+      "name": "Sample Client — The Patel Family",
+      "email": "patel.family@example.com",
+      "phone": "(202) 555-0103",
+      "date": "2026-12-12",
+      "time": "15:30",
+      "location": "[Sample garden location]",
+      "packageId": "extended",
+      "deposit": 225,
+      "notes": "[Sample session notes]",
+      "status": "Viewed",
+      "timeline": [
+        {
+          "label": "Created",
+          "at": "2026-11-19T12:00:00Z"
+        },
+        {
+          "label": "Sent",
+          "at": "2026-11-19T13:00:00Z"
+        },
+        {
+          "label": "Viewed",
+          "at": "2026-11-19T14:00:00Z"
+        }
+      ],
+      "snapshot": {
+        "packageName": "Extended Family",
+        "includes": "90 minutes, 50 edited photos",
+        "price": 450,
+        "saleNote": "",
+        "business": "[Lauren's Studio Name] Photography",
+        "delivery": 21
+      },
+      "contractDate": "2026-11-19T12:00:00Z"
+    },
+    {
+      "id": "sample-ellis",
+      "name": "Sample Client — The Ellis Family",
+      "email": "ellis.family@example.com",
+      "phone": "(202) 555-0104",
+      "date": "2026-12-13",
+      "time": "15:30",
+      "location": "[Sample garden location]",
+      "packageId": "newborn",
+      "deposit": 200,
+      "notes": "[Sample session notes]",
+      "status": "Signed",
+      "timeline": [
+        {
+          "label": "Created",
+          "at": "2026-11-19T12:00:00Z"
+        },
+        {
+          "label": "Sent",
+          "at": "2026-11-19T13:00:00Z"
+        },
+        {
+          "label": "Viewed",
+          "at": "2026-11-19T14:00:00Z"
+        },
+        {
+          "label": "Signed",
+          "at": "2026-11-19T15:00:00Z"
+        }
+      ],
+      "signedRecord": {
+        "browser": "Demo browser",
+        "name": "Sample Ellis",
+        "at": "2026-11-19T15:00:00Z"
+      },
+      "snapshot": {
+        "packageName": "Newborn / Milestone",
+        "includes": "2 hours, 25 edited photos",
+        "price": 400,
+        "saleNote": "",
+        "business": "[Lauren's Studio Name] Photography",
+        "delivery": 21
+      },
+      "contractDate": "2026-11-19T12:00:00Z"
+    },
+    {
+      "id": "sample-nguyen",
+      "name": "Sample Client — The Nguyen Family",
+      "email": "nguyen.family@example.com",
+      "phone": "(202) 555-0105",
+      "date": "2026-12-14",
+      "time": "15:30",
+      "location": "[Sample garden location]",
+      "packageId": "family",
+      "deposit": 162.5,
+      "notes": "[Sample session notes]",
+      "status": "Draft",
+      "timeline": [
+        {
+          "label": "Created",
+          "at": "2026-11-19T12:00:00Z"
+        }
+      ],
+      "snapshot": {
+        "packageName": "Family Portrait",
+        "includes": "60 minutes, 30 edited photos",
+        "price": 325,
+        "saleNote": "",
+        "business": "[Lauren's Studio Name] Photography",
+        "delivery": 21
+      },
+      "contractDate": "2026-11-19T12:00:00Z"
+    }
+  ],
+  "activity": [
+    {
+      "text": "Everyday theme made live",
+      "at": "2026-11-21T17:00:00Z"
+    },
+    {
+      "text": "Sample packages added",
+      "at": "2026-11-20T14:00:00Z"
+    },
+    {
+      "text": "Demo studio created",
+      "at": "2026-11-19T12:00:00Z"
+    }
+  ],
+  "outbox": [],
+  "sale": null
+}

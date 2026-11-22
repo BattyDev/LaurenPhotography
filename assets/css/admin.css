@@ -1,0 +1,294 @@
+.admin-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 3%;
+  min-height: 76px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font:
+    1.2rem Georgia,
+    serif;
+  margin-right: auto;
+}
+.admin-brand .icon {
+  width: 34px;
+  height: 34px;
+}
+.demo-pill {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  background: #e5edde;
+  color: #30462c;
+  border: 1px solid #c0ccb8;
+  border-radius: 20px;
+  padding: 5px 11px;
+}
+.admin-bar a {
+  font-size: 0.9rem;
+}
+.user-tools {
+  display: flex;
+  gap: 5px;
+}
+.user-tools button {
+  padding: 0;
+  width: 44px;
+  display: grid;
+  place-items: center;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(142px, 12%) minmax(0, 1.5fr) minmax(270px, 1fr);
+  min-height: calc(100dvh - 76px);
+}
+.tabs {
+  border-right: 1px solid var(--line);
+  background: var(--surface);
+  padding: 28px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.tabs button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border-color: transparent;
+  font-weight: 600;
+  text-align: left;
+}
+.tabs button[aria-current="page"] {
+  background: #e5ebdf;
+  color: #253b2b;
+}
+.admin-kicker,
+.preview-label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+.tabs .admin-kicker {
+  margin: 0 5px 13px;
+}
+.editor {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px clamp(16px, 2.5vw, 40px);
+}
+.editor h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  letter-spacing: -0.045em;
+}
+.editor #theme-title h2 {
+  margin: 8px 0 20px;
+}
+.preview {
+  background: #e6e7df;
+  border-left: 1px solid var(--line);
+  padding: 18px 15px;
+  position: sticky;
+  top: 0;
+  height: calc(100dvh - 10px);
+}
+.preview-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+.preview iframe {
+  border: 1px solid var(--line);
+  width: 100%;
+  height: calc(100% - 36px);
+  background: #faf9f4;
+  border-radius: 10px;
+}
+.preview-label .icon {
+  width: 16px;
+}
+#welcome {
+  max-width: 1050px;
+  width: 88%;
+  margin: clamp(50px, 9vh, 110px) auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 10%;
+}
+#welcome figure {
+  background: #fffdf7;
+  padding: 13px 13px 38px;
+  transform: rotate(-3deg);
+  box-shadow: 0 5px 20px #28332620;
+}
+#welcome img {
+  width: 100%;
+  height: auto;
+}
+#welcome h1 {
+  font-size: clamp(3rem, 5vw, 4.6rem);
+  letter-spacing: -0.06em;
+  margin: 16px 0 26px;
+}
+#welcome form {
+  display: grid;
+  gap: 10px;
+}
+#login p {
+  font-size: 0.85rem;
+}
+#login button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.activity-list {
+  padding: 0;
+  list-style: none;
+}
+.activity-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.activity-list small {
+  display: block;
+}
+@media (max-width: 899px) {
+  .preview {
+    display: none;
+  }
+  .dashboard {
+    display: block;
+  }
+  .admin-bar {
+    flex-wrap: wrap;
+    padding: 10px 4%;
+    gap: 5px;
+  }
+  .admin-brand {
+    font-size: 0.95rem;
+    max-width: calc(100% - 140px);
+  }
+  .admin-brand .icon {
+    width: 24px;
+  }
+  .admin-bar a {
+    font-size: 0.79rem;
+    padding: 6px 9px;
+  }
+  .admin-bar a .icon {
+    width: 15px;
+  }
+  .demo-pill {
+    order: 5;
+    flex-basis: auto;
+    margin-right: 50%;
+    white-space: nowrap;
+  }
+  .admin-bar .user-tools {
+    gap: 0;
+  }
+  .admin-bar .user-tools button {
+    border: 0;
+  }
+  .tabs {
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid var(--line);
+    padding: 4px 8px max(5px, env(safe-area-inset-bottom));
+  }
+  .tabs .admin-kicker {
+    display: none;
+  }
+  .tabs button {
+    flex: 1;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 0.8rem;
+  }
+  .editor {
+    padding: 24px 5% 95px;
+  }
+  #welcome {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 36px auto;
+  }
+  #welcome figure {
+    width: 85%;
+    padding: 9px 9px 20px;
+  }
+  #welcome > div {
+    width: 100%;
+  }
+  #welcome h1 {
+    font-size: 3rem;
+  }
+  #welcome h1 br {
+    display: none;
+  }
+  #welcome h1 em::before {
+    content: " ";
+  }
+}
+@media (max-width: 490px) {
+  .admin-brand {
+    max-width: 45%;
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+  .admin-bar {
+    justify-content: space-between;
+  }
+  .demo-pill {
+    margin-right: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .admin-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4px 8px;
+  }
+  .admin-brand {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .admin-bar > .btn {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .admin-bar .demo-pill {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+    margin: 0;
+    font-size: 0.63rem;
+  }
+  .admin-bar .user-tools {
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: end;
+  }
+  .admin-bar:has(.user-tools[hidden]) .demo-pill {
+    grid-column: 1/-1;
+  }
+}

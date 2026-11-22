@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="form-action 'none'" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#faf8f2" />
+    <title>Lauren’s Photography Studio · Portraits</title>
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/themes.css" />
+    <link rel="stylesheet" href="assets/css/public.css" />
+    <script type="module" src="assets/js/public.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div id="banner" hidden></div>
+    <header class="public-header">
+      <div class="header-inner">
+        <a href="#main" class="brand"
+          ><span class="logo-slot">YOUR<br />LOGO</span
+          ><span
+            ><span class="studio-name">[Lauren's Studio Name]</span
+            ><small>Photography</small></span
+          ></a
+        >
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="#gallery">Gallery</a><a href="#about">About</a
+          ><a href="#packages">Packages</a
+          ><a class="book-nav" href="#inquiry"
+            >Book a session
+            <svg class="icon" aria-hidden="true">
+              <use href="assets/img/icons.svg#arrow"></use></svg
+          ></a>
+        </nav>
+        <button
+          id="menu"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <svg class="icon" aria-hidden="true">
+            <use href="assets/img/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-inner wrap">
+          <div class="hero-copy">
+            <p class="kicker">
+              <span class="rule"></span
+              ><span id="tagline">Family & portrait photography</span>
+            </p>
+            <h1 id="headline">
+              Little moments,<br /><em>lasting memories.</em>
+            </h1>
+            <p id="subline"></p>
+            <a class="btn primary hero-cta" href="#inquiry"
+              ><span id="cta">Book a session</span>
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/img/icons.svg#arrow"></use></svg
+            ></a>
+          </div>
+          <figure class="photo-mount">
+            <span class="tape" aria-hidden="true"></span
+            ><img
+              id="hero-img"
+              width="1600"
+              height="900"
+              alt="Seasonal hero photo placeholder"
+            />
+            <figcaption>
+              <span id="collection-name">The Everyday Collection</span
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/img/icons.svg#star"></use>
+              </svg>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="gallery" class="wrap section gallery-section">
+        <div class="section-title">
+          <div>
+            <p class="kicker">
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/img/icons.svg#camera"></use>
+              </svg>
+              The portfolio
+            </p>
+            <h2>In the frame<span>.</span></h2>
+          </div>
+          <p class="gallery-note">
+            A selection from the
+            <em id="gallery-theme">Everyday</em> collection.
+          </p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+      <section class="about section" id="about">
+        <div class="wrap about-layout">
+          <div class="portrait">
+            <svg class="icon" aria-hidden="true">
+              <use href="assets/img/icons.svg#camera"></use></svg
+            ><strong>YOUR PORTRAIT HERE</strong
+            ><small>Meet the photographer</small>
+          </div>
+          <div>
+            <p class="kicker">
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/img/icons.svg#leaf"></use>
+              </svg>
+              Behind the lens
+            </p>
+            <h2>Hi, I’m Lauren.</h2>
+            <p>
+              [A few sentences about you, how you got into photography, and what
+              a session with you feels like.]
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="packages" class="wrap section">
+        <p class="kicker">
+          <svg class="icon" aria-hidden="true">
+            <use href="assets/img/icons.svg#sun"></use>
+          </svg>
+          Session guide
+        </p>
+        <h2>Packages & pricing<span>.</span></h2>
+        <p class="section-desc">
+          Sample packages and prices for this studio demo.
+        </p>
+        <div id="package-list" class="package-list"></div>
+      </section>
+      <section class="reviews section">
+        <div class="wrap">
+          <p class="kicker">
+            <svg class="icon" aria-hidden="true">
+              <use href="assets/img/icons.svg#star"></use>
+            </svg>
+            Testimonials
+          </p>
+          <h2>Kind words<span>.</span></h2>
+          <div class="quotes">
+            <blockquote>
+              <p>“[Client quote goes here]”</p>
+              <cite>— [Client name]</cite>
+            </blockquote>
+            <blockquote>
+              <p>“[Client quote goes here]”</p>
+              <cite>— [Client name]</cite>
+            </blockquote>
+            <blockquote>
+              <p>“[Client quote goes here]”</p>
+              <cite>— [Client name]</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section id="inquiry" class="wrap section inquiry">
+        <div>
+          <p class="kicker">
+            <svg class="icon" aria-hidden="true">
+              <use href="assets/img/icons.svg#camera"></use>
+            </svg>
+            Get in touch
+          </p>
+          <h2>Let’s plan<br /><em>your session.</em></h2>
+          <p>Choose a session and share a few details with Lauren.</p>
+          <small>Demo inquiry · Saved in this browser only</small>
+        </div>
+        <form id="inquiry-form">
+          <label
+            >Name<input
+              name="name"
+              autocomplete="name"
+              required
+              maxlength="120" /></label
+          ><label
+            >Email<input
+              name="email"
+              type="email"
+              autocomplete="email"
+              required /></label
+          ><label
+            >Phone<input
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              required /></label
+          ><label
+            >Preferred date<input name="date" type="date" required /></label
+          ><label class="full"
+            >Package<select
+              required
+              name="packageId"
+              id="inquiry-package"
+            ></select></label
+          ><button class="btn primary full">
+            Send inquiry
+            <svg class="icon" aria-hidden="true">
+              <use href="assets/img/icons.svg#arrow"></use>
+            </svg>
+          </button>
+        </form>
+        <p id="thanks" tabindex="-1" hidden>
+          Thanks! Lauren will reach out within 24 hours.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <span id="copyright"></span>
+        <div>
+          <button data-social="Instagram">[Instagram]</button
+          ><button data-social="Facebook">[Facebook]</button>
+        </div>
+        <small>Demo site</small>
+      </div>
+    </footer>
+    <button id="theme-switch" class="switcher">
+      <svg class="icon" aria-hidden="true">
+        <use href="assets/img/icons.svg#palette"></use>
+      </svg>
+      Demo: preview themes
+      <svg class="icon" aria-hidden="true">
+        <use href="assets/img/icons.svg#down"></use>
+      </svg>
+    </button>
+    <dialog id="lightbox" aria-label="Gallery photo">
+      <button id="close-light" aria-label="Close photo">×</button
+      ><img id="light-photo" alt="" />
+      <div>
+        <button id="previous" aria-label="Previous photo">←</button
+        ><span id="light-count"></span
+        ><button id="next" aria-label="Next photo">→</button>
+      </div>
+    </dialog>
+  </body>
+</html>
